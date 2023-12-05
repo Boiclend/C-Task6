@@ -3,6 +3,17 @@ using System.Globalization;
 using System.Runtime.CompilerServices;
 using Microsoft.Win32.SafeHandles;
 
+// Программа должна выполнять преобразования строки (длина строки 255 символов):
+
+// СТРОКА ЗАГЛАВНЫМИ БУКВАМИ
+// строка в нижнем регистре
+// С Заглавной Буквы (Первый Символ Каждого Слова В Строке )
+// пЕРВЫЙ сИМВОЛ в нИЖНЕМ рЕГИСТРЕ
+// Как в предложении(с заглавной буквы).
+// Символ 'f' — выход из программы
+// Организовать в программе меню, через которое можно удобно выбирать любое действие. Программа должна выполняться пока пользователь не введет  символ 'f'.
+
+
 void UpperCase(string txt) {
     Console.WriteLine(txt.ToUpper()); 
 }
@@ -85,6 +96,7 @@ char Operation = Menu();
 while (Operation != 'f'){
    if (Operation != '1' & Operation != '2' & Operation != '3' & Operation != '4' & Operation != '5') {
         Console.WriteLine("Введеный символ не соответствует условию. Повторите попытку ");
+        break;
     }
    else{
         if (Operation == '1') {
