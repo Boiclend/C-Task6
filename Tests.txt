@@ -1,0 +1,19 @@
+Входные данные: Hello world
+
+Функция UpperCase:
+    ожидание - HELLO WORLD
+    результат - HELLO WORLD
+Функция LowerCase:
+    ожидание - hello world
+    результат - hello world
+Функция UpperFirstSym:
+    ожидание - Hello World
+    результат - Hello World
+Функция LowerFirstSym:
+    ожидание - hello world
+    результат - hello world
+Функция FirstSymbolToUpper:
+    ожидание - Hello world
+    результат - Hello world
+
+Тестирование успешно пройдено

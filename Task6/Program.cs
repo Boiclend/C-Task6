@@ -14,22 +14,22 @@ using Microsoft.Win32.SafeHandles;
 // Организовать в программе меню, через которое можно удобно выбирать любое действие. Программа должна выполняться пока пользователь не введет  символ 'f'.
 
 
-void UpperCase(string txt) {
+void UpperCase(string txt) { // все буквы в UpperCase
     Console.WriteLine(txt.ToUpper()); 
 }
 
-void LowerCase(string txt) {
+void LowerCase(string txt) { // все буквы в LowerCase
     Console.WriteLine(txt.ToLower());
 }
 
-void UpperFirstSym(string txt) {
+void UpperFirstSym(string txt) { // Первые буквы заглавные
         
     TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
     txt = textInfo.ToTitleCase(txt);
     Console.WriteLine(txt);
 }
 
-void LowerFirstSym(string txt) {
+void LowerFirstSym(string txt) { // Первые буквы предложения в LowerCase
     char[] str = txt.ToCharArray();
     char temp = ' ';
     string Converter;
@@ -57,7 +57,7 @@ void LowerFirstSym(string txt) {
     Console.WriteLine();
 }
 
-void FirstSymbolToUpper(string txt) {
+void FirstSymbolToUpper(string txt) { // Только первый символ заглавный
     txt = txt.ToLower();
     char[] str = txt.ToCharArray();
     char temp = ' ';
@@ -75,7 +75,7 @@ void FirstSymbolToUpper(string txt) {
     Console.WriteLine();
 }
 
-char Menu() {
+char Menu() { // меню программы
     Console.WriteLine("Для преобразования строки в заглавные буквы нажмите : 1");
     Console.WriteLine("Для преобразования строки в нижний регистр нфжмите : 2");
     Console.WriteLine("Для преобразования строки с Заглавной Буквы нажмите : 3");
